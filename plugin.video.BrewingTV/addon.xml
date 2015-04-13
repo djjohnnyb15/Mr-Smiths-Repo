@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.BrewingTV"
+	name="BrewingTV"
+	version="1.0.0"
+	provider-name="Mr-Smith">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">BrewingTV</summary>
+    <description lang="en">BrewingTV some things about home brewing</description>
+    <platform>all</platform>
+  </extension>
+</addon>
