@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="Architects@Work"
+       name="Architects@Work"
+       version="1.4.3"
+       provider-name="Mr Smith">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.urlresolver"  version="0.0.1"/>
+		<import addon="script.module.t0mm0.common" version="1.1.0"/>
+		<import addon="script.module.metahandler"  version="1.0.2"/>
+		<import addon="script.module.beautifulsoup"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">Browse many sources</summary>
+    <description lang="en">Browse and play a wide selection of movies from the sites like watchfreeseres, seriesgate, rlsmx, newmyvidelinks etc.
+	[COLOR red]Mash Up plugin is coded with Google Analytics which is disabled in addon settings under General Tab.[/COLOR]
+	[COLOR green]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
