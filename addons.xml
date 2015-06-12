@@ -2,62 +2,6 @@
 <addons>
 
 
-<addon id="plugin.video.BrewingTV"
-	name="BrewingTV"
-	version="1.0.0"
-	provider-name="Mr-Smith">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">BrewingTV</summary>
-    <description lang="en">BrewingTV some things about home brewing by Mr-Smith.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.CraigTube"
-	name="CraigTube"
-	version="1.0.0"
-	provider-name="Mr-Smith">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">CraigTube</summary>
-    <description lang="en">CraigTube some things about home brewing by Mr-Smith.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-
-
-<addon id="plugin.video.FlyFishingTips&Techniques"
-	name="Fly Fishing Tips & Techniques"
-	version="1.0.0"
-	provider-name="Mr-Smith">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Fly Fishing Tips & Techniques</summary>
-    <description lang="en">Fly Fishing Tips & Techniques by Mr-Smith.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.dijentertainments" name="DIJ Entertainments" version="1.0.2" provider-name="MetalKettle">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
