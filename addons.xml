@@ -20,6 +20,24 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.CraigTube"
+	name="CraigTube"
+	version="1.0.0"
+	provider-name="Mr-Smith">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">CraigTube</summary>
+    <description lang="en">CraigTube some things about home brewing by Mr-Smith.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 
 
 <addon id="plugin.video.FlyFishingTips&Techniques"

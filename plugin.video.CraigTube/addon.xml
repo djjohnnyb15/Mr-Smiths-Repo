@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.CraigTube"
+	name="CraigTube"
+	version="1.0.0"
+	provider-name="Mr-Smith">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">CraigTube</summary>
+    <description lang="en">At age 20, Craig started experimenting with beer kits, and he's still at it. He has attracted literally thousands of followers, many of which claim that they would have never started home brewing if it weren't for Craig's videos. Craig also does a variety of other things on his YouTube channel, including cooking shows, music performances, and philosophical talks, but the main theme of the channel is BEER.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
