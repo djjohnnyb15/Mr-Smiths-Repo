@@ -50,7 +50,7 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">dij entwertainments is a plugin for all </summary>
+    <summary lang="en">dij entertainments is a plugin for all </summary>
     <description lang="en">we have tvshows movies workout stuff howtoo recipes and more to come</description>
     <platform>all</platform>
   </extension>
