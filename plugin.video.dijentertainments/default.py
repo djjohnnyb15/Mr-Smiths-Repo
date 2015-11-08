@@ -63,6 +63,7 @@ else: SOURCES = []
 def addon_log(string):
     if debug == 'true':
         xbmc.log("[addon.live.dijentertainments-%s]: %s" %(addon_version, string))
+		
 
 
 def makeRequest(url, headers=None):
@@ -87,7 +88,8 @@ def makeRequest(url, headers=None):
 				
 def DIJIndex():
     addon_log("DIJindex")
-    addDir('Search','Search',40,'http://dij.zombie-wizard.uk/pics/SEARCH.png' ,  FANART,'','','','')
+   
+	
     getData(CIBase,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 		
@@ -282,6 +284,20 @@ def getCommunitySources(browse=False):
                 addDir(name,url+name,1,icon,fanart,'','','','','download')
             else:
                 addDir(name,url+name,11,icon,fanart,'','','','','download')
+def TWITTER():
+        text = ''
+        twit = 'https://script.google.com/macros/s/AKfycbyBcUa5TlEQudk6Y_0o0ZubnmhGL_-b7Up8kQt11xgVwz3ErTo/exec?573185581745889283'
+        link = open_url(twit)
+        link = link.replace('/n','')
+        link = link.decode('utf-8').encode('utf-8').replace('&#39;','\'').replace('&#10;',' - ').replace('&#x2026;','')
+        match=re.compile("<title>(.+?)</title>.+?<pubDate>(.+?)</pubDate>",re.DOTALL).findall(link)[1:]
+        for status, dte in match:
+            status = status.encode('ascii', 'ignore')
+            dte = dte[:-15]
+            dte = '[COLOR blue][B]'+dte+'[/B][/COLOR]'
+            text = text+dte+'\n'+status+'\n'+'\n'
+        showText('[COLOR blue][B]@dijentertainmen[/B][/COLOR]', text)
+        quit()
 
 
 def getSoup(url,data=None):
@@ -2576,3 +2592,4 @@ elif mode==53:
     addon_log("Requesting JSON-RPC Items")
     pluginquerybyJSON(url)
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
+	
